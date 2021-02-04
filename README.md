@@ -1,17 +1,25 @@
 # What is this?
 
-This repository (cde-imake) is intended to host the last release of the open
+This repository (freebsdrpi-cde) is intended to host the last release of the open
 source CDE project (https://sourceforge.net/projects/cdesktopenv/)
-that works with the imake build system.
+that builds on Raspberry Pi 3B+ running FreeBSD.
 
 # Why?
 
-Upstream plans to switch to the autotools suite soon to facilitate packaging CDE on Linux distributions,
-but the GNU build system no longer functions well on CDE's SVR4 reference platforms.
+CDE really works nice on \*BSDs as they have more in common with UNIX than Linux has. Thus,
+applications such as dtmail, dtcalendar works nicely. Because CDE is a tiny bit old desktop
+environment it is much lighter than other desktop environments which makes it work nicely on
+Raspberry Pis.
 
-Unfortunately, much of the support for these systems has already been removed, so the cde-classic
-repository is intended to be the new starting point for efforts to port CDE back to the traditional
-UNIX platforms.
+Upstream CDE has recently added many changes that does not build on RPI3B+. Unfortunately,
+neither 2.3.0 release version does not work neither. Thus, this repo is a buckup of the most
+recent building version (2.3.2a) to keep one of the building ones alive. As this repo is an
+archive, I cannot really help with fixing bugs (Sorry!). If you want supported and newer version,
+[cde-imake](https://github.com/lev105/cde-imake) might be worth checking out as well as [original 
+repo](https://sourceforge.net/projects/cdesktopenv/).
 
-There is still enough similarity in the structure between the open source CDE project with imake
-and the Open Group release to make this a worthwhile source for backporting bugfixes, etc.
+# Building and Installing CDE on RPI3B+
+It is here:
+https://forums.FreeBSD.org/threads/installing-cde-on-freebsd.55125/post-492660
+
+(maybe I'll write it here later...)
